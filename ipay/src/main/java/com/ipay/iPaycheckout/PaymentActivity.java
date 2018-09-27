@@ -1,4 +1,4 @@
-package com.ipay.ipaycheckout;
+package com.ipay.iPaycheckout;
 
 import android.content.Context;
 import android.content.Intent;
@@ -19,7 +19,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.LinearLayout;
 
-import com.ipay.ipay.R;
+import com.ipay.iPaycheckout.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;

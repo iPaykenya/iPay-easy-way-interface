@@ -1,4 +1,4 @@
-package com.ipay.ipaycheckout;
+package com.ipay.iPaycheckout;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

@@ -1,4 +1,4 @@
-package com.ipay.ipaycheckout;
+package com.ipay.iPaycheckout;
 
 import org.junit.Test;
 
