@@ -4,10 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.ipay.ipay.PaymentActivity;
-
-import java.util.HashMap;
-import java.util.Map;
+import com.ipay.ipaycheckout.PaymentActivity;
 
 public class MainActivity extends AppCompatActivity {
 
