@@ -19,8 +19,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.LinearLayout;
 
-import com.ipay.iPaycheckout.R;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -43,7 +41,7 @@ public class PaymentActivity extends AppCompatActivity {
     LinearLayout mainLayout;
     ImageView edit, cancel;
     EditText edit_phone;
-    TextView text_phone;
+    TextView text_phone, text_amount, text_email;
     private ImageButton mpesa, airtel, lipa_bonga, ezzy_pay, visa;
 
     @Override
@@ -58,10 +56,12 @@ public class PaymentActivity extends AppCompatActivity {
         mRelativeLayout=(RelativeLayout) findViewById(R.id.payment);
 
 
-        edit       = (ImageView) findViewById(R.id.edit);
-        cancel     = (ImageView) findViewById(R.id.cancel);
-        text_phone = (TextView) findViewById(R.id.text_phone);
-        edit_phone = (EditText) findViewById(R.id.edit_phone);
+        edit        = (ImageView) findViewById(R.id.edit);
+        cancel      = (ImageView) findViewById(R.id.cancel);
+        text_phone  = (TextView) findViewById(R.id.text_phone);
+        edit_phone  = (EditText) findViewById(R.id.edit_phone);
+        text_amount = (TextView) findViewById(R.id.amount);
+        text_email  = (TextView) findViewById(R.id.email);
 
         mpesa               = (ImageButton) findViewById(R.id.mpesa);
         airtel              = (ImageButton) findViewById(R.id.airtel);
@@ -85,6 +85,8 @@ public class PaymentActivity extends AppCompatActivity {
         final String mer              = intent.getStringExtra("mer");
         final String amount           = intent.getStringExtra("amount");
         text_phone.setText(intent.getStringExtra("phone"));
+        text_email.setText(intent.getStringExtra("email"));
+        text_amount.setText(intent.getStringExtra("currency")+". "+intent.getStringExtra("amount")+".00");
         final String email            = intent.getStringExtra("email");
         final String vid              = intent.getStringExtra("vid");
         final String curr             = intent.getStringExtra("currency");

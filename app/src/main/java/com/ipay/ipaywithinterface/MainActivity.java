@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         String mer              = ""; //merchant name
         String amount           = "1";
         String phone_number     = "07xxxxxxxx";
-        String email            = "example@example.com";
+        String email            = "kisee@example.com";
         String vid              = "demo"; //Vendor ID
         String curr             = "KES"; //or USD
         String cst              = "1"; //email notification
